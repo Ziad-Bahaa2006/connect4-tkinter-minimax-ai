@@ -66,7 +66,7 @@ A window will launch and gameplay will begin immediately.
 
 * **Mohamed Islam Ibrahim - 2405736** – GUI & overall integration
 * **Mohamed Elmesarea - 2405727** – Game logic & heuristic design
-* **Ziad Bahaa Elsayed** – Minimax algorithm implementation
+* **Ziad Bahaa Elsayed  2405720** – Minimax algorithm implementation
 ---
 
 ## 🧩 Technologies Used
