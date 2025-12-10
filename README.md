@@ -1,84 +1,147 @@
-# Connect 4 Game (Tkinter + Minimax AI)
+# 🎮 Connect 4 — AI Powered Game (Minimax + Alpha-Beta Pruning)
 
-A fully implemented **Connect 4** game built with **Python**, featuring a clean **Tkinter GUI** and a competitive **Minimax AI** player. This project demonstrates game development, search algorithms, GUI programming, and heuristic-driven decision‑making.
-
----
-
-## 🚀 Features
-
-* **Interactive GUI** built with Tkinter.
-* **Player vs AI** gameplay.
-* AI powered by **Minimax algorithm (depth = 3)**.
-* Custom **heuristic evaluation** for smart decision‑making.
-* Automatic win/draw detection.
-* Fully modular: game logic, AI logic, and GUI are separated for readability.
+> An advanced implementation of **Connect 4** using Python, featuring a smart AI opponent, modern GUI, and a strategic heuristic system.  
+> Built collaboratively as a team project with clean code, modular structure, and professional documentation.
 
 ---
 
-## 🧠 AI Logic (Minimax + Heuristic)
-
-The AI evaluates possible moves using:
-
-* **Minimax search tree** up to depth 3.
-* Custom **score_position()** heuristic.
-* Automatic board copying and simulation.
-
-This allows the AI to:
-
-* Predict and block player winning moves.
-* Maximize its own winning opportunities.
-* Play strategically even with low computational cost.
-
----
-
-## 📁 Project Structure
-
-```
-project-folder/
-│
-├── main_gui.py                   # Tkinter GUI 
-├── Assignment_2.py               # Core game logic + heuristic function
-├── connect_4_minimax_task_2.py   # Minimax + get_ai_move() implementation
-│
-```
-
----
-
-## 🛠️ Installation & Running
-
-### 1) Ensure Python 3 is installed
-
-```
-python --version
-```
-
-### 2) Run the game
-
-```
-python main_gui.py
-```
-
-A window will launch and gameplay will begin immediately.
+## 🔗 GitHub Repository  
+👉 **Repo Link:**  
+`https://github.com/Ziad-Bahaa2006/connect4-tkinter-minimax-ai`
 
 ---
 
 ## 👥 Team Members
 
-* **Mohamed Islam Ibrahim - 2405736** – GUI & overall integration
-* **Mohamed Elmesarea - 2405727** – Game logic & heuristic design
-* **Ziad Bahaa Elsayed  2405720** – Minimax algorithm implementation
+| Name | ID | Role |
+|------|------|------|
+| **Ziad Bahaa Elsayed Taha** | 2405720 | AI Logic, GUI Integration, Game Mechanics |
+| **Mohammed Islam Ibrahim** | 2405736 | GUI Design, User Experience |
+| **Mohammed Elmesarea** | 2405727 | Board Logic, Optimization |
 ---
 
-## 🧩 Technologies Used
+## 🧠 Project Overview
 
-* **Python 3**
-* **Tkinter** (GUI)
-* **Minimax Algorithm**
-* **Heuristic Evaluation for AI**
+This project delivers a polished, interactive version of **Connect 4**, enhanced with:
+
+- A fully functional **Tkinter GUI**
+- Circular tokens for an authentic Connect 4 look
+- Four difficulty levels powered by **Minimax + Alpha-Beta Pruning**
+- A robust **heuristic evaluation function**
+- A win condition based on **"Most 4-in-a-Row Chains Wins"** instead of the standard first-4
+
+The project is modular, clean, and follows software engineering best practices.
 
 ---
 
-## 🤝 Contributing
+## 🚀 Features
 
-Contributions, improvements, and enhancements are welcome.
-Feel free to open a Pull Request.
+### 🎨 Elegant GUI (Tkinter + Canvas)
+- Smooth circular pieces  
+- Clean color palette  
+- Responsive layout  
+- Difficulty selector screen  
+
+### 🧠 Smart AI Opponent
+Built using:
+
+- **Minimax Algorithm**  
+- **Alpha-Beta Pruning**  
+- **Move Tree Exploration**  
+- **State Evaluation Heuristic**
+
+The AI evaluates future board states and picks the best possible move depending on the chosen difficulty.
+
+### 🎚️ Difficulty Levels
+
+| Mode | Depth | Description |
+|------|--------|-------------|
+| Easy | 3 | Simple, fast decisions |
+| Medium | 4 | Balanced gameplay |
+| Hard | 5 | Strong AI |
+| Impossible | 6 | Very hard to beat |
+
+---
+
+## 🧩 Project Structure
+
+```
+.
+├── game_board.py        # Board logic, valid moves, heuristic scoring
+├── ai_engine.py         # Minimax + Alpha-Beta pruning + tree nodes
+├── main.py              # Tkinter GUI and game flow control
+```
+
+Each file is independent and follows a clean, maintainable architecture.
+
+---
+
+## 🧠 AI Logic — How It Works
+
+### 1️⃣ **Minimax Algorithm**
+Simulates all future moves for both players, assuming perfect play.
+
+### 2️⃣ **Alpha-Beta Pruning**
+Optimizes Minimax by skipping branches that don’t affect the final decision.  
+This dramatically speeds up higher difficulty levels.
+
+### 3️⃣ **Heuristic Evaluation Function**
+The AI scores each board using rules such as:
+
+- Central column priority  
+- 2-in-a-row, 3-in-a-row patterns  
+- Penalties for opponent threats  
+- Guaranteed wins (4 in a row = +10000)
+
+This makes the AI smart, aggressive, and unpredictable.
+
+---
+
+## 🎯 Game Logic: “Most 4-Chains Wins”
+
+Unlike the classic version:
+- The game **doesn’t end when someone makes the first 4**.
+- Instead, when the board is full:
+  - The player with **more 4-in-a-row chains** wins.
+  - This encourages strategy, blocking, and long-term planning.
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Install Python  
+Make sure Python 3.8+ is installed.
+
+### 2️⃣ Run the game  
+```
+python main.py
+```
+
+No external libraries needed — only Tkinter (pre-installed with Python).
+
+---
+
+## 🔮 Future Enhancements
+
+- Animated falling discs  
+- Sound effects for moves and winning  
+- Player vs Player mode  
+- Dark mode GUI  
+- Saving/loading game states  
+
+---
+
+## 📄 License  
+This project is for educational and academic use.  
+Feel free to modify and extend it.
+
+---
+
+## ⭐ Special Notes  
+This project showcases:
+
+- Professional code structure  
+- Real AI search techniques  
+- GUI programming  
+- Team collaboration  
+- Clean documentation  
